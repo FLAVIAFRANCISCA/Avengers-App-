@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Avengers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body onload="initPage()">
+
+  <!-- Loader image -->
+<div id="loader">
+  <div class="logo-glow-ring">
+    <img src="images/avengers_logo.png" alt="Marvel Avengers Logo" class="logo flip-logo" />
+  </div>
+  <div class="typewriter">
+    <h2></h2>
+  </div>
+</div>
+
+
+  <!-- Main content -->
+  <div id="content" style="display:none;">
+
+  <header class="top-banner">
+  <img src="images/avengers_logo.png" alt="Avengers Logo" class="header-logo" />
+</header>
+
+    <!--  Hero cards -->
+<div class="card-container">
+  <div class="card thor" onclick="showBio(0)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_01.jpg" alt="Thor">
+      </div>
+      <div class="card-back">
+        <h2>⚡ Thor</h2>
+        <p>God of Thunder 🌩️</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card ironman" onclick="showBio(1)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_02.jpg" alt="Iron Man">
+      </div>
+      <div class="card-back">
+        <h2>🔨 Iron Man</h2>
+        <p>Genius Billionaire 💼</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card hulk" onclick="showBio(2)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_03.jpg" alt="Hulk">
+      </div>
+      <div class="card-back">
+        <h2>💪 Hulk</h2>
+        <p>Strongest Avenger 🟢</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card hawkeye" onclick="showBio(3)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_04.jpg" alt="Hawkeye">
+      </div>
+      <div class="card-back">
+        <h2>🏹 Hawkeye</h2>
+        <p>Master Marksman 🎯</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card captainamerica" onclick="showBio(4)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_05.jpg" alt="Captain America">
+      </div>
+      <div class="card-back">
+        <h2>🛡️ Captain America</h2>
+        <p>The First Avenger 🇺🇸</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card blackwidow" onclick="showBio(5)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/avengers_06.jpg" alt="Black Widow">
+      </div>
+      <div class="card-back">
+        <h2>🕷️ Black Widow</h2>
+        <p>Master Spy 🕵️‍♀️</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal box -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeBio()">&times;</span>
+        <h2 id="modal-name">Hero Name</h2>
+        <p id="modal-bio">Detailed superhero bio...</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Avengers Fan Page</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
